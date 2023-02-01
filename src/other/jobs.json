@@ -1,0 +1,74 @@
+[
+    {
+       "title":"Data Steward",
+       "company":"Luminor Bank AS",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/05/835424-1ecf9b37737bbc6dd996aff59c024443.png",
+       "region":"Tallinn",
+       "salary":"3000 - 4200 €/m",
+       "description":"Yes, you can! That's our attitude towards our work, ambitious, ideas and relationships. We, at Luminor, believe that anyone has the potential to achieve big things and we encourage everyone to achieve them – professionally and personally. As Data Steward you will be a key-person and a point of contact for data related inquiries at Luminor. You will closely work together with other departments in the bank in order to ensure data quality improvement. It will also involve defining and maintaining data glossaries and taking a part in different data management projects. The role requires a high degree of analytical skills and technical know-how. Data Stewardship team works on pan-Baltic level and is important part of data management initiatives at Luminor. We strive to improve, standardize and align data across all three Baltic states. Traveling in the Baltics is expected."
+    },
+    {
+       "title":"Software Engineer (Quality Assurance) - Baltic Factoring",
+       "company":"Swedbank AS",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/05/835358-b22a70c32ed7623ed04386b7750d9956.png",
+       "region":"Estonia",
+       "salary":"2950 - 4450 €/m",
+       "description":"Are you passionate about IT and quality? In Swedbank you have the opportunity to: Contribute with your testing knowledge and experience (manual testing initially, with a perspective of test automation in the future); Be part of an agile cross functional team and constantly improve the way of working; Be involved in analysis, design, development, testing and production support of new digital solutions for Baltic factoring business; Belong to supportive, caring, professional Baltic team; Work in an environment that supports your individual growth; Enjoy flexible work environment (hybrid workplace and flexible time); Collaborate with talented team members; Have fun!"
+    },
+    {
+       "title":"Junior Software Engineer (Java)",
+       "company":"Swedbank AS",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/04/834797-e21ca5f2a1361908c3205b310176730b.png",
+       "region":"Estonia",
+       "salary":"2500 - 3700 €/m",
+       "description":"Are you passionate about Java and Spring Boot? In Swedbank you have the opportunity to: Develop and maintain in-house and customer facing applications as well as backend services; Be part of different type of developments such as new product launch and technical upgrades; Improve your DevOps skills; Work together with awesome and supportive teammates; Be part of an agile full stack product team; Drive innovations within the team and beyond; Have access to e-trainings and conferences to support your professional growth."
+    },
+    {
+       "title":"Graphic designer",
+       "company":"ROZERT OÜ",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/03/833781-4adb4f071bcd227e74013dffa442c799.png",
+       "region":"Tallinn",
+       "salary":"",
+       "description":"ROZERT OÜ is a successful iGaming product-based software company, with offices in numerous countries, now looking for an experienced Graphic Designer who will be working in our Tallinn office. We make our products simple and convenient for our users. We design product functionality with complex mechanics, and constantly review our methods of operation that are familiar to the market - while striving to be the best on the market. We offer a unique chance to grow in an international team and enjoy the benefits of working in a global company. Your work will have a direct influence on the future of the company."
+    },
+    {
+       "title":"Customer Support Specialist",
+       "company":"WALLESTER AS",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/01/831043-c1876c42e51a89b58529623aa3230f39.png",
+       "region":"Tallinn",
+       "salary":"",
+       "description":""
+    },
+    {
+       "title":"QA Engineer",
+       "company":"WALLESTER AS",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/01/831202-8c25ab25d53a7614292b4a5df58d347e.png",
+       "region":"Tallinn",
+       "salary":"",
+       "description":""
+    },
+    {
+       "title":"Software developer",
+       "company":"Mercans OÜ",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/01/830856-1401208f2b0821afb53d479dddc90af9.png",
+       "region":"Tartu",
+       "salary":"",
+       "description":""
+    },
+    {
+       "title":"Data Storytelling Expert (Data Analyst)",
+       "company":"Scandiweb",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/03/833666-aae8ba4ab7facbf05c49170b3ca50ae8.png",
+       "region":"Home office",
+       "salary":"1800 - 2800 €/m",
+       "description":"You are passionate about data and eCommerce, ready to help world-leading brands, such as, Puma, The New York Times, Jaguar, and many others. If you are feeling a hunger that needs to be satisfied by participating in business correction and marketing - we might have something for you! We are looking for a passionate Data Analyst who is ready to dig into datasets and create insights, answers, and stories to drive action for Marketing, User Journey, or Business decisions."
+    },
+    {
+       "title":"Web Analytics Specialist",
+       "company":"Scandiweb",
+       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/03/833666-aae8ba4ab7facbf05c49170b3ca50ae8.png",
+       "region":"Home office",
+       "salary":"1800 - 2800 €/m",
+       "description":"Passion for Growth Marketing rises your challenge hunger to dig into data and help brands make the correct business and marketing decisions. You have experience in web analytics solutions and gaining actionable insights from data. You are just what we are looking for! We are looking for a Web Analytics Specialist that can execute web analytics implementation planning and defining requirements, as well as take existing requirements and take care of the implementation. "
+    }
+ ]
