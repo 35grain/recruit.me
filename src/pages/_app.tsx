@@ -1,6 +1,8 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import { createTheme, NextUIProvider, Text } from "@nextui-org/react"
+import { Navigation } from '@/components/Navigation'
 
 const theme = createTheme({
   type: "light", // it could be "light" or "dark"
@@ -30,6 +32,12 @@ const theme = createTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider theme={theme}>
+      <Head>
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Navigation/>
       <Component {...pageProps} />
     </NextUIProvider>
   )

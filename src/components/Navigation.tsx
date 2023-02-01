@@ -1,27 +1,33 @@
 import { Navbar, Button, Link, Text } from "@nextui-org/react";
-import confetti from 'canvas-confetti';
+import confetti from "canvas-confetti";
 
 export const Navigation = () => {
-    const handleConfetti = () => {
-        confetti({
-            angle: -45,
-            origin: {
-                x: 0.055,
-                y: 0.07
-            },
-            zIndex: 201,
-        });
-      };
-    
+  const handleConfetti = () => {
+    confetti({
+      angle: -45,
+      origin: {
+        x: 0.055,
+        y: 0.07,
+      },
+      zIndex: 201,
+    });
+  };
+
   return (
-    <Navbar isBordered variant="floating">
-      <Navbar.Brand
-        onClick={handleConfetti}>
+    <Navbar
+      shouldHideOnScroll
+      isBordered
+      variant="sticky"
+      css={{
+        $$navbarContainerMaxWidth: "100%",
+      }}
+    >
+      <Navbar.Brand onClick={handleConfetti}>
         <Text b color="#000">
           Recruit.Me
         </Text>
       </Navbar.Brand>
-      <Navbar.Content hideIn="xs" variant="highlight-rounded">
+      <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
         <Navbar.Link href="#">Features</Navbar.Link>
         <Navbar.Link isActive href="#">
           Customers
