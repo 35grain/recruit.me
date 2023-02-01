@@ -1,6 +1,33 @@
+// Nav
+.nav-brand {
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+// Hero
 .hero {
-    background: url('/hero_bg.svg') top left no-repeat;
-    background-size: 100%, auto;
-    padding-top: 64px;
-    min-height: 98vh;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    min-height: calc(95vh - 76px);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('/hero_bg.svg') top left no-repeat;
+        background-size: auto 100%;
+        opacity: 0.3;
+    }
+}
+
+// Main
+.main-wrapper {
+    background-color: #a0e183;
+    padding: 64px 0;
 }

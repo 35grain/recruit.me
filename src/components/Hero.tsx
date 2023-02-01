@@ -1,29 +1,35 @@
 import {
-    Container,
-    Row,
-    Col,
-    Text,
-    Spacer,
-    Button,
-  } from "@nextui-org/react";
+  Container,
+  Row,
+  Col,
+  Text,
+  Spacer,
+  Button,
+  Link,
+} from "@nextui-org/react";
+import { useRouter } from "next/router";
 
 export const Hero = () => {
-    return (
-        <div className="hero">
-        <Container lg as="main">
-          <Spacer y={3} />
-          <Row>
-            <Col>
+  const router = useRouter();
+  return (
+    <section className="hero">
+      <Container fluid>
+        <Row>
+          <Col
+            css={{
+              maxWidth: "650px",
+            }}
+          >
+            <Text
+              h1
+              css={{
+                display: "inline",
+                lineHeight: 1.2,
+              }}
+            >
+              Looking for a
               <Text
-                h1
-                css={{
-                  display: "inline",
-                }}
-              >
-                Looking for a
-              </Text>
-              <Text
-                h1
+                as="span"
                 css={{
                   textGradient: "45deg, $primary -20%, $blue600 50%",
                   display: "inline",
@@ -32,31 +38,26 @@ export const Hero = () => {
                 {" "}
                 dream career{" "}
               </Text>
-              <Text
-                h1
-                css={{
-                  display: "inline",
-                  lineHeight: 1.2,
-                }}
-              >
-                in IT but don't know where to start?
-              </Text>
-              <Text size="$xl">Something something</Text>
-              <Spacer y={1} />
-              <Button
-                size="lg"
-                color="gradient"
-                animated
-                css={{
-                  minWidth: "auto",
-                }}
-              >
-                Get started
-              </Button>
-            </Col>
-            <Col></Col>
-          </Row>
-        </Container>
-      </div>
-    );
-}
+              in IT but don't know where to start?
+            </Text>
+            <Text size="$xl"><b>Recruit.<Text as="span" color="primary">ME</Text></b> helps you get up to speed in no time! 🚀</Text>
+            <Spacer y={1} />
+            <Button
+              size="lg"
+              color="gradient"
+              flat
+              rounded
+              as={Link}
+              css={{
+                minWidth: "auto",
+              }}
+              onClick={() => router.push("/dashboard")}
+            >
+              Get started
+            </Button>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
