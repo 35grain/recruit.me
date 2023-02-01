@@ -53,7 +53,6 @@ export const Navigation = () => {
         <Navbar.Item>
           <Button
             auto
-            flat
             color="gradient"
             as={Link}
             onClick={() => router.push("/dashboard")}

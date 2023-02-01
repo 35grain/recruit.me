@@ -45,7 +45,6 @@ export const Hero = () => {
             <Button
               size="lg"
               color="gradient"
-              flat
               rounded
               as={Link}
               css={{
