@@ -1,21 +1,26 @@
-import { Navbar, Button, Link, Text } from "@nextui-org/react";
+import { Navbar, Button, Link, Image } from "@nextui-org/react";
+import { useRouter } from "next/router";
 import confetti from "canvas-confetti";
 
 export const Navigation = () => {
+  const router = useRouter();
   const handleConfetti = () => {
     confetti({
-      angle: -45,
+      angle: -40,
       origin: {
         x: 0.055,
         y: 0.07,
       },
       zIndex: 201,
+      scalar: 1.2,
+      spread: 70,
+      drift: 4,
     });
+    router.push('/');
   };
 
   return (
     <Navbar
-      shouldHideOnScroll
       isBordered
       variant="sticky"
       css={{
@@ -23,22 +28,14 @@ export const Navigation = () => {
       }}
     >
       <Navbar.Brand onClick={handleConfetti}>
-        <Text b color="#000">
-          Recruit.Me
-        </Text>
+        <Image src="/logo.svg" height={"auto"} width={"100px"} />
       </Navbar.Brand>
-      <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
-        <Navbar.Link href="#">Features</Navbar.Link>
-        <Navbar.Link isActive href="#">
-          Customers
-        </Navbar.Link>
-      </Navbar.Content>
       <Navbar.Content>
-        <Navbar.Link color="inherit" href="#">
+        <Navbar.Item onClick={() => router.push('/dashboard')}>
           Login
-        </Navbar.Link>
+        </Navbar.Item>
         <Navbar.Item>
-          <Button auto flat as={Link} href="#">
+          <Button auto flat color="gradient" as={Link} onClick={() => router.push('/dashboard')}>
             Get started
           </Button>
         </Navbar.Item>

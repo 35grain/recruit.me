@@ -21,7 +21,7 @@ const theme = createTheme({
       primaryShadow: '#475B63',
       background: '#FFFFFF',
       text: '#2e2c2f',
-      gradient: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
+      gradient: 'linear-gradient(112deg, $primary -10%, $blue600 80%)',
       link: '#46DF06',
     },
     space: {},
