@@ -2,7 +2,6 @@ import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { createTheme, NextUIProvider } from "@nextui-org/react"
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { Navigation } from '@/components/Navigation'
 
 const theme = createTheme({
@@ -20,10 +19,11 @@ const theme = createTheme({
       primarySolidHover: '$green700',
       primarySolidContrast: '$white',
       primaryShadow: '#475B63',
-      background: '#FFFFFF',
+      background: '$white',
       text: '#2e2c2f',
       gradient: 'linear-gradient(112deg, $primary -10%, $blue600 80%)',
       link: '#46DF06',
+      linkLight: '$white'
     },
     space: {},
     fonts: {}
