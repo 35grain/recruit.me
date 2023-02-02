@@ -9,6 +9,7 @@ import {
 import { useTheme as useNextTheme } from "next-themes";
 import { useRouter } from "next/router";
 import confetti from "canvas-confetti";
+import { useEffect } from "react";
 
 export const Navigation = () => {
   const router = useRouter();
@@ -28,6 +29,25 @@ export const Navigation = () => {
     });
     router.push("/");
   };
+
+  // Uncomment code for automated confetti clicker
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     confetti({
+  //       angle: -40,
+  //       origin: {
+  //         x: 0.05,
+  //         y: 0.05,
+  //       },
+  //       zIndex: 201,
+  //       scalar: 1.2,
+  //       spread: 70,
+  //       drift: 4,
+  //     });
+  //   }, 100);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <Navbar
