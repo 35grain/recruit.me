@@ -28,7 +28,7 @@ export const JobList = () => {
 
   return (
     <Container>
-      <Text h2>Your dream career awaits!</Text>
+      <Text h2>Sounds like your future?</Text>
       <div
         style={{
           display: "flex",
