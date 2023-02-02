@@ -19,7 +19,7 @@ export const JobCard = ({ job }: JobCardProps) => {
       <Card
         isPressable
         isHoverable
-        css={{ p: "$6", mw: "400px" }}
+        css={{ p: "$6",}}
         onPress={handlePress}
       >
         <Card.Header>
@@ -42,11 +42,14 @@ export const JobCard = ({ job }: JobCardProps) => {
           </Grid.Container>
         </Card.Header>
         <Card.Body>
+          {job.description ? job.description.substring(0, 100) + '...' : ''}
+        </Card.Body>
+        <Card.Footer>
           <Row>
             <Badge>{job.region}</Badge>
             {job.salary && <Badge>{job.salary}</Badge>}
           </Row>
-        </Card.Body>
+        </Card.Footer>
       </Card>
       <JobModal
         visible={isModalVisible}

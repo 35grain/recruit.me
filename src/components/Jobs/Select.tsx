@@ -15,7 +15,7 @@ export const Select = ({ selected, setSelected, menuItems }: SelectProps) => {
 
   return (
     <Dropdown>
-      <Dropdown.Button flat css={{ tt: "capitalize" }}>
+      <Dropdown.Button flat css={{ tt: "capitalize", backgroundColor: "$white" }}>
         {selectedValue}
       </Dropdown.Button>
       <Dropdown.Menu

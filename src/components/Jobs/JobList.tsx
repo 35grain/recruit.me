@@ -1,8 +1,9 @@
-import { Container } from "@nextui-org/react";
+import { Container, Grid, Text } from "@nextui-org/react";
 import { JobCard } from "@/components/Jobs/JobCard";
 import { useState } from "react";
 import { Select } from "./Select";
 import jobs from "@/other/jobs.json";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export const JobList = () => {
   const [selectedCompany, setSelectedCompany] = useState(["Company"]);
@@ -19,12 +20,12 @@ export const JobList = () => {
 
   return (
     <Container>
-      <Container
-        css={{
+      <Text h2>Your dream career awaits!</Text>
+      <div
+        style={{
           display: "flex",
           gap: "30px",
           justifyContent: "center",
-          margin: "50px 0",
         }}
       >
         <Select
@@ -37,29 +38,26 @@ export const JobList = () => {
           setSelected={setSelectedRegion}
           menuItems={regions}
         />
-      </Container>
+      </div>
 
-      <Container
-        css={{
-          display: "flex",
-          gap: "30px",
-          justifyContent: "center",
-          margin: "50px 0",
-        }}
-      >
-        {jobs
-          .filter((job) => {
-            return (
-              ("Region" === selectedRegion[0] ||
-                job.region === selectedRegion[0]) &&
-              ("Company" === selectedCompany[0] ||
-                job.company === selectedCompany[0])
-            );
-          })
-          .map((job) => {
-            return <JobCard key={job.title} job={job} />;
-          })}
-      </Container>
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+        <Masonry gutter="22px" style={{
+          marginTop: "20px"
+        }}>
+          {jobs
+            .filter((job) => {
+              return (
+                ("Region" === selectedRegion[0] ||
+                  job.region === selectedRegion[0]) &&
+                ("Company" === selectedCompany[0] ||
+                  job.company === selectedCompany[0])
+              );
+            })
+            .map((job) => {
+              return <JobCard key={job.title} job={job} />;
+            })}
+        </Masonry>
+      </ResponsiveMasonry>
     </Container>
   );
 };

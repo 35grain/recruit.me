@@ -7,21 +7,20 @@ import {
   Button,
   Link,
 } from "@nextui-org/react";
-import { useRouter } from "next/router";
 
 export const Hero = () => {
-  const router = useRouter();
   return (
     <section className="hero">
       <Container fluid>
         <Row>
           <Col
             css={{
-              maxWidth: "650px",
+              maxWidth: "50%",
             }}
           >
             <Text
               h1
+              size={60}
               css={{
                 display: "inline",
                 lineHeight: 1.2,
@@ -47,10 +46,10 @@ export const Hero = () => {
               color="gradient"
               rounded
               as={Link}
+              href="#main"
               css={{
                 minWidth: "auto",
               }}
-              onClick={() => router.push("/dashboard")}
             >
               Get started
             </Button>

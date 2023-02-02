@@ -7,7 +7,6 @@ import {
   Row,
   Badge,
   Collapse,
-  Container,
 } from "@nextui-org/react";
 import { Job } from "@/other/Types";
 
@@ -51,21 +50,21 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
       width="600px"
     >
       <Modal.Header>
-        <img
-          alt="company logo"
-          src={job.companyLogo}
-          width="64px"
-          height="64px"
-          style={{ objectFit: "contain" }}
-        />
-        <Grid.Container css={{ pl: "$6" }}>
-          <Grid xs={12}>
-            <Text h4 css={{ lineHeight: "$xs" }}>
+        <Grid.Container gap={1} css={{ pl: "$6" }}>
+          <Grid xs={2}>
+            <img
+              alt="company logo"
+              src={job.companyLogo}
+              width="100%"
+              height="100%"
+              style={{ objectFit: "contain" }}
+            />
+          </Grid>
+          <Grid xs={10} direction="column" justify="flex-start">
+            <Text h4 css={{ lineHeight: "$xs", textAlign: "left" }}>
               {job.title}
             </Text>
-          </Grid>
-          <Grid xs={12}>
-            <Text css={{ color: "$accents8" }}>{job.company}</Text>
+            <Text css={{ color: "$accents8", textAlign: "left" }}>{job.company}</Text>
           </Grid>
         </Grid.Container>
       </Modal.Header>
@@ -79,9 +78,13 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
         </Row>
         <Collapse.Group>
           <Collapse title="Requirements">
-            {requirements.map((req, index) => (
-              <Text key={index}>{req}</Text>
-            ))}
+            <ul style={{
+              listStyle: "initial"
+            }}>
+              {requirements.map((req, index) => (
+                <li key={index}>{req}</li>
+              ))}
+            </ul>
           </Collapse>
           {/* <Collapse title="Suggested courses">
             <Container

@@ -17,7 +17,7 @@ export const Navigation = () => {
         x: 0.05,
         y: 0.05,
       },
-      zIndex: 201,
+      zIndex: 301,
       scalar: 1.2,
       spread: 70,
       drift: 4,
@@ -50,6 +50,7 @@ export const Navigation = () => {
       variant="sticky"
       css={{
         $$navbarContainerMaxWidth: "100%",
+        zIndex: 300
       }}
     >
       <Navbar.Brand
@@ -59,7 +60,7 @@ export const Navigation = () => {
           cursor: "pointer",
         }}
       >
-        <Image src="/logo.svg" height={"auto"} width={"100px"} />
+        <Image src="/logo.svg" height={"32px"} width={"auto"} />
       </Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item as={Link} onClick={() => router.push("/dashboard")}>
