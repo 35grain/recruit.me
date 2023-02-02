@@ -33,7 +33,7 @@
        "region":"Tallinn",
        "salary":"",
        "replyTime": 10,
-       "description":""
+       "description":"We are looking for a Customer Support Specialist for our team. To excel in this role, you should be excellent in verbal and written communication. You are expected to have a thorough knowledge of the products and services offered by the company. You will be in direct contact with the customers. You also will be accountable to troubleshoot any problem and issues occurring to the customers regarding the products in a timely fashion."
     },
     {
        "title":"QA Engineer",
@@ -42,7 +42,7 @@
        "region":"Tallinn",
        "salary":"",
        "replyTime": 6,
-       "description":""
+       "description":"We are looking for a skilled and experienced Quality Assurance Engineer to join our team. As a Quality Assurance (QA) Engineer, you will be responsible for writing and conducting tests cases ensuring the software is running perfectly. You will be meeting the needs of clients along with the team of Software Developers and Test Engineers. You will be designing and implementing the automated tests to maintain the quality of the product. Your ultimate goal will be to drive the test strategy/visibility for all the QA tasks in the project."
     },
     {
       "title":"Junior Software Engineer (Java)",
@@ -60,7 +60,7 @@
        "region":"Tartu",
        "salary":"",
        "replyTime": 7,
-       "description":""
+       "description":"We are looking for a Software Engineer to manage activities ranging from automated traffic control systems to complicated industrial processes. You will play a critical role in creating software that gives practical solutions. You will be expected to handle the complete software development lifecycle, which includes analysing needs, designing, testing, and developing software to fulfil those needs."
     },
     {
        "title":"Data Storytelling Expert (Data Analyst)",
