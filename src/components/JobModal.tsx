@@ -83,7 +83,7 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
               <Text key={index}>{req}</Text>
             ))}
           </Collapse>
-          <Collapse title="Suggested courses">
+          {/* <Collapse title="Suggested courses">
             <Container
               css={{
                 display: "flex",
@@ -95,12 +95,12 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
                 <Button key={index}>{course}</Button>
               ))}
             </Container>
-          </Collapse>
+          </Collapse> */}
         </Collapse.Group>
       </Modal.Body>
       <Modal.Footer>
-        <Button auto flat color="error" onPress={handleOnClose}>
-          Close
+        <Button auto flat onPress={handleOnClose}>
+          Apply
         </Button>
       </Modal.Footer>
     </Modal>

@@ -3,18 +3,13 @@ import {
   Button,
   Link,
   Image,
-  Switch,
-  useTheme,
 } from "@nextui-org/react";
-import { useTheme as useNextTheme } from "next-themes";
 import { useRouter } from "next/router";
 import confetti from "canvas-confetti";
 import { useEffect } from "react";
 
 export const Navigation = () => {
   const router = useRouter();
-  const { setTheme } = useNextTheme();
-  const { isDark, type } = useTheme();
   const handleConfetti = () => {
     confetti({
       angle: -40,
