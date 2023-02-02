@@ -14,6 +14,7 @@ const theme = createTheme({
       primaryLightActive: '$green400',
       primaryLightContrast: '$green600',
       primary: '#46DF06',
+      secondary: '$blue600',
       primaryBorder: '$green500',
       primaryBorderHover: '$green600',
       primarySolidHover: '$green700',

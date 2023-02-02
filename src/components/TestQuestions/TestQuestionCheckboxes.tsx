@@ -8,8 +8,8 @@ export const TestQuestionCheckboxes = (props: {
     <>
       <Text h4>{props.label}</Text>
       <Checkbox.Group orientation="horizontal">
-        {props.options.map((option) => {
-          return <Checkbox value={option}>{option}</Checkbox>;
+        {props.options.map((option, index) => {
+          return <Checkbox value={option} key={index}>{option}</Checkbox>;
         })}
       </Checkbox.Group>
     </>
