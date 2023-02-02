@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import { Container, Row, Col, Image, Text, Spacer, Button } from "@nextui-org/react";
-import { JobList } from "@/components/JobList";
+import { JobList } from "@/components/Jobs/JobList";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,5 +1,5 @@
 import { Container } from "@nextui-org/react";
-import { JobCard } from "@/components/JobCard";
+import { JobCard } from "@/components/Jobs/JobCard";
 import { useState } from "react";
 import { Select } from "./Select";
 import jobs from "@/other/jobs.json";

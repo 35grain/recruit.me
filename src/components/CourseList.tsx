@@ -6,7 +6,7 @@ import {
   Grid,
   Pagination,
 } from "@nextui-org/react";
-import { Select } from "@/components/Select";
+import { Select } from "@/components/Jobs/Select";
 import { useState } from "react";
 
 export const CourseList = () => {
