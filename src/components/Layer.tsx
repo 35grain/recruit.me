@@ -1,5 +1,11 @@
-import { Card, Text, Button, Container, Pagination } from "@nextui-org/react";
+import {
+  Card,
+  Text,
+  Container,
+  Pagination
+} from "@nextui-org/react";
 import { useState } from "react";
+import { ConfettiButton } from "./ConfettiButton";
 
 interface LayerProps {
   jobName: string;
@@ -27,8 +33,8 @@ export const Layer = ({ jobName, title, children }: LayerProps) => {
           <Text h3>{title}</Text>
         </Card.Header>
         <Card.Body>{children}</Card.Body>
-        <Card.Footer>
-          <Button onPress={handleNextPage}>Submit</Button>
+        <Card.Footer css={{ display: "flex", justifyContent: "flex-end" }}>
+          <ConfettiButton callback={handleNextPage} />
         </Card.Footer>
       </Card>
 
