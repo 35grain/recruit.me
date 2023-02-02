@@ -1,15 +1,23 @@
-import { Card, Text, Container, Pagination, Button, Spacer } from "@nextui-org/react";
+import {
+  Card,
+  Text,
+  Container,
+  Pagination,
+  Button,
+  Spacer,
+  Link,
+} from "@nextui-org/react";
 import { useState } from "react";
 import { ConfettiButton } from "./Buttons/ConfettiButton";
 import { Profile } from "./Layers/Profile";
 import { Task } from "./Layers/Task";
 import { Test } from "./Layers/Test";
+import { useRouter } from "next/router";
 
-interface LayerProps {
-  jobName: string;
-}
+export const Layer = () => {
+  const router = useRouter();
+  const { jobName } = router.query;
 
-export const Layer = ({ jobName }: LayerProps) => {
   const [page, setPage] = useState(1);
 
   const pagesTotal = 4;
@@ -38,14 +46,27 @@ export const Layer = ({ jobName }: LayerProps) => {
           {page === 4 && (
             <>
               <Text>Good job! Your application was sent.</Text>
-              <Spacer y={2}/>
-              <Button css={{width: "150px"}}>Back to job offers</Button>
+              <Spacer y={2} />
             </>
           )}
         </Card.Body>
 
         <Card.Footer css={{ display: "flex", justifyContent: "flex-end" }}>
-          {page !== pagesTotal && <ConfettiButton callback={handleNextPage} />}
+          {page !== pagesTotal ? (
+            <ConfettiButton callback={handleNextPage} />
+          ) : (
+            <Button
+              size="lg"
+              rounded
+              as={Link}
+              href="/#main"
+              css={{
+                minWidth: "auto",
+              }}
+            >
+              Back to job offers
+            </Button>
+          )}
         </Card.Footer>
       </Card>
 
