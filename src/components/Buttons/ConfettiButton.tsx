@@ -23,7 +23,7 @@ export const ConfettiButton = ({ callback }: ConfettiButtonProps) => {
 
   return (
     <Button onClick={handleConfetti}>
-      Submit
+      Next
     </Button>
   );
 };

@@ -1,18 +1,15 @@
 import { TestQuestionLongText } from "../TestQuestions/TestQuestionLongText";
 import { Spacer, Text, Container } from "@nextui-org/react";
+import { FileUploader } from "../FileUploader";
 
 export const Task = () => {
-  const handleFileChange = () => {
-    console.log();
-  };
-
   return (
     <Container
       css={{
         display: "flex",
         flexDirection: "column",
         overflowY: "visible",
-        height: "50vh",
+        minHeight: "50vh",
       }}
     >
       <Text h5>Prototype a web application for scheduling an appointment</Text>
@@ -20,16 +17,18 @@ export const Task = () => {
         Given a CSV dataset that contains the active coaches and their weekly
         schedule of their available hours, Output the following User Stories:
       </Text>
-      <ul>
-        <Text>As a User, I want to see which coaches I can schedule with.</Text>
-        <Text>
+      <ul style={{
+          listStyle: "initial",
+        }}>
+        <li>As a User, I want to see which coaches I can schedule with.</li>
+        <li>
           As a User, I want to see what 30 minute timeslots are available to
           schedule with a particular coach.
-        </Text>
-        <Text>
+        </li>
+        <li>
           As a User, I want to book an appointment with a coach at one of their
           available times.
-        </Text>
+        </li>
       </ul>
 
       <Text>
@@ -48,10 +47,9 @@ export const Task = () => {
       </Text>
 
       <Spacer y={1} />
-      <TestQuestionLongText label="Comments" />
+      <TestQuestionLongText label="Comments" initialValue="The solution is located in this github repository: https://github.com/piuccio/cowsay"/>
       <Spacer y={1} />
-      <Text h5>Upload your solution</Text>
-      <input type="file" onChange={handleFileChange} />
+      <FileUploader />
     </Container>
   );
 };
