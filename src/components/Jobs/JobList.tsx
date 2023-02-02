@@ -1,4 +1,4 @@
-import { Container, Grid, Text } from "@nextui-org/react";
+import { Container, Text } from "@nextui-org/react";
 import { JobCard } from "@/components/Jobs/JobCard";
 import { useState } from "react";
 import { Select } from "./Select";
@@ -12,6 +12,14 @@ export const JobList = () => {
   let companies = Array.from(new Set(jobs.map((job) => job.company)));
   let regions = Array.from(new Set(jobs.map((job) => job.region)));
 
+  jobs.sort((a, b) => {
+    if (a.replyTime > b.replyTime) {
+      return 1;
+    }
+    else {
+      return 0;
+    }
+  });
   companies.sort();
   regions.sort();
 
