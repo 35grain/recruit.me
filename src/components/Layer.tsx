@@ -40,7 +40,7 @@ export const Layer = () => {
   };
 
   return (
-    <Container css={{ margin: "50px 0" }}>
+    <Container css={{ marginTop: "25px" }}>
       <Container css={{ padding: "0 22px" }}>
         <Text h2>
           {jobName} | {company}
