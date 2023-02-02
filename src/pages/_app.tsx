@@ -15,6 +15,8 @@ const theme = createTheme({
       primaryLightContrast: '$green600',
       primary: '#46DF06',
       secondary: '$blue600',
+      secondaryLight: '$blue200',
+      dropdownItemHoverTextColor: '#2e2c2f',
       primaryBorder: '$green500',
       primaryBorderHover: '$green600',
       primarySolidHover: '$green700',

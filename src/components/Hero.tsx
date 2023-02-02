@@ -45,6 +45,7 @@ export const Hero = () => {
               size="lg"
               color="gradient"
               rounded
+              shadow
               as={Link}
               href="#main"
               css={{

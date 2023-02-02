@@ -3,10 +3,13 @@ import {
   Button,
   Link,
   Image,
+  Avatar,
+  Dropdown,
+  Text,
 } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import confetti from "canvas-confetti";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 export const Navigation = () => {
   const router = useRouter();
@@ -30,7 +33,7 @@ export const Navigation = () => {
   useEffect(() => {
     let interval: NodeJS.Timer;
 
-    if(automatedConfetti) {
+    if (automatedConfetti) {
       interval = setInterval(() => {
         confetti({
           angle: -40,
@@ -45,7 +48,7 @@ export const Navigation = () => {
         });
       }, 100);
     }
-  
+
     return () => clearInterval(interval);
   }, []);
 
@@ -55,7 +58,7 @@ export const Navigation = () => {
       variant="sticky"
       css={{
         $$navbarContainerMaxWidth: "100%",
-        zIndex: 300
+        zIndex: 300,
       }}
     >
       <Navbar.Brand
@@ -65,19 +68,66 @@ export const Navigation = () => {
           cursor: "pointer",
         }}
       >
-        <Image src="/logo.svg" height={"32px"} width={"auto"} alt="Logo"/>
+        <Image src="/logo.svg" height={"32px"} width={"auto"} alt="Logo" />
       </Navbar.Brand>
-      <Navbar.Content>
-        <Navbar.Item>
-          <Button
-            auto
-            color="gradient"
-            as={Link}
-            href="/#main"
-          >
-            Get started
-          </Button>
-        </Navbar.Item>
+      <Navbar.Content gap={10}>
+        {router.pathname !== "/dashboard" ? (
+          <>
+            <Navbar.Item>
+              <Button
+                auto
+                color="secondary"
+                bordered
+                as={Link}
+                onClick={() => router.push("/dashboard")}
+                css={{
+                  boxSizing: "border-box !important",
+                }}
+              >
+                Login
+              </Button>
+            </Navbar.Item>
+            <Navbar.Item>
+              <Button
+                auto
+                color="gradient"
+                as={Link}
+                onClick={() => router.push("/#main")}
+              >
+                Get started
+              </Button>
+            </Navbar.Item>
+          </>
+        ) : (
+          <>
+            <Dropdown placement="bottom-right">
+              <Dropdown.Trigger>
+                <Avatar
+                  text="Swedbank AS"
+                  color="warning"
+                  textColor="white"
+                  css={{
+                    display: "inline-block",
+                  }}
+                />
+              </Dropdown.Trigger>
+              <Dropdown.Menu
+                color="primary"
+                disabledKeys={["help_and_feedback", "vacancies"]}
+                aria-label="Actions" onAction={() => router.push('/')}
+              >
+                <Dropdown.Item key="dashboard">Dashboard</Dropdown.Item>
+                <Dropdown.Item key="vacancies">Vacancies</Dropdown.Item>
+                <Dropdown.Item key="help_and_feedback" withDivider>
+                  Help & Feedback
+                </Dropdown.Item>
+                <Dropdown.Item key="logout" color="error" withDivider>
+                  Log Out
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </>
+        )}
       </Navbar.Content>
     </Navbar>
   );
