@@ -50,7 +50,7 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
       width="600px"
     >
       <Modal.Header>
-        <Grid.Container gap={1} css={{ pl: "$6" }}>
+        <Grid.Container gap={1}>
           <Grid xs={2}>
             <img
               alt="company logo"
