@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import { Container, Row, Col, Image, Text, Spacer, Button } from "@nextui-org/react";
-import { JobList } from "@/components/Jobs/JobList";
+import { Container, Progress, Grid, Card, Row, Col, Text } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +11,19 @@ export default function Home() {
         <title>Recruit.Me - Dashboard</title>
       </Head>
       <Container lg as="main">
-        <JobList/>
+        <h1>Recruitment dashboard</h1>
+        <Card>
+          <Card.Body>
+            <Row>
+              <Col>
+                <Text></Text>
+                <Progress color="primary" value={75} />
+              </Col>
+              <Col>
+              </Col>
+            </Row>
+          </Card.Body>
+        </Card>
       </Container>
     </>
   );

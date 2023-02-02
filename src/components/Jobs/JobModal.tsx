@@ -14,6 +14,7 @@ interface JobModalProps {
   visible: boolean;
   setVisible: React.Dispatch<React.SetStateAction<boolean>>;
   job: Job;
+  replyTime: number;
 }
 
 export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
@@ -72,6 +73,7 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
         <Row>
           <Badge>{job.region}</Badge>
           {job.salary && <Badge>{job.salary}</Badge>}
+          <Badge>Replies in {job.replyTime} days</Badge>
         </Row>
         <Row justify="space-between">
           <Text size={16}>{job.description}</Text>

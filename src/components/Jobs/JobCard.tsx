@@ -48,6 +48,7 @@ export const JobCard = ({ job }: JobCardProps) => {
           <Row>
             <Badge>{job.region}</Badge>
             {job.salary && <Badge>{job.salary}</Badge>}
+            <Badge>Replies in {job.replyTime} days</Badge>
           </Row>
         </Card.Footer>
       </Card>
@@ -55,6 +56,7 @@ export const JobCard = ({ job }: JobCardProps) => {
         visible={isModalVisible}
         setVisible={setModalVisible}
         job={job}
+        replyTime={job.replyTime}
       />
     </>
   );
