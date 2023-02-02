@@ -5,7 +5,7 @@ import {
   Pagination
 } from "@nextui-org/react";
 import { useState } from "react";
-import { ConfettiButton } from "./ConfettiButton";
+import { ConfettiButton } from "./Buttons/ConfettiButton";
 
 interface LayerProps {
   jobName: string;
