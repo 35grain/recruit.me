@@ -65,7 +65,7 @@ export const Navigation = () => {
           cursor: "pointer",
         }}
       >
-        <Image src="/logo.svg" height={"32px"} width={"auto"} />
+        <Image src="/logo.svg" height={"32px"} width={"auto"} alt="Logo"/>
       </Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item as={Link} onClick={() => router.push("/dashboard")}>
@@ -76,7 +76,7 @@ export const Navigation = () => {
             auto
             color="gradient"
             as={Link}
-            onClick={() => router.push("/dashboard")}
+            onClick={() => router.push("/#main")}
           >
             Get started
           </Button>

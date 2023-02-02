@@ -12,7 +12,7 @@ export const JobList = () => {
   let companies = Array.from(new Set(jobs.map((job) => job.company)));
   let regions = Array.from(new Set(jobs.map((job) => job.region)));
 
-  jobs.sort((a, b) => {
+  [...jobs].sort((a, b) => {
     if (a.replyTime > b.replyTime) {
       return 1;
     }

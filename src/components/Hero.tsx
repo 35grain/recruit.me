@@ -37,7 +37,7 @@ export const Hero = () => {
                 {" "}
                 dream career{" "}
               </Text>
-              in IT but don't know where to start?
+              {"in IT but don't know where to start?"}
             </Text>
             <Text size="$xl"><b>Recruit.<Text as="span" color="primary">ME</Text></b> helps you get up to speed in no time! 🚀</Text>
             <Spacer y={1} />

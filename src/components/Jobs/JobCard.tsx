@@ -24,7 +24,7 @@ export const JobCard = ({ job }: JobCardProps) => {
       >
         <Card.Header>
           <img
-            alt="company logo"
+            alt="Company logo"
             src={job.companyLogo}
             width="64px"
             height="64px"
