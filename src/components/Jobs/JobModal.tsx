@@ -9,6 +9,7 @@ import {
   Collapse,
 } from "@nextui-org/react";
 import { Job } from "@/other/Types";
+import { useRouter } from "next/router";
 
 interface JobModalProps {
   visible: boolean;
@@ -17,6 +18,8 @@ interface JobModalProps {
 }
 
 export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
+  const router = useRouter();
+
   const handleOnClose = () => {
     setVisible(false);
   };
@@ -64,7 +67,9 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
             <Text h4 css={{ lineHeight: "$xs", textAlign: "left" }}>
               {job.title}
             </Text>
-            <Text css={{ color: "$accents8", textAlign: "left" }}>{job.company}</Text>
+            <Text css={{ color: "$accents8", textAlign: "left" }}>
+              {job.company}
+            </Text>
           </Grid>
         </Grid.Container>
       </Modal.Header>
@@ -78,9 +83,11 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
         </Row>
         <Collapse.Group>
           <Collapse title="Requirements">
-            <ul style={{
-              listStyle: "initial"
-            }}>
+            <ul
+              style={{
+                listStyle: "initial",
+              }}
+            >
               {requirements.map((req, index) => (
                 <li key={index}>{req}</li>
               ))}
@@ -102,7 +109,16 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
         </Collapse.Group>
       </Modal.Body>
       <Modal.Footer>
-        <Button auto flat onPress={handleOnClose}>
+        <Button
+          auto
+          flat
+          onPress={() =>
+            router.push({
+              pathname: "/flow",
+              query: { jobName: job.title },
+            })
+          }
+        >
           Apply
         </Button>
       </Modal.Footer>
