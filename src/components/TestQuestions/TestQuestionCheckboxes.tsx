@@ -7,7 +7,7 @@ export const TestQuestionCheckboxes = (props: {
   return (
     <>
       <Text h4>{props.label}</Text>
-      <Checkbox.Group orientation="horizontal">
+      <Checkbox.Group orientation="vertical">
         {props.options.map((option, index) => {
           return <Checkbox value={option} key={index}>{option}</Checkbox>;
         })}
