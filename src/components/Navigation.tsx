@@ -68,15 +68,12 @@ export const Navigation = () => {
         <Image src="/logo.svg" height={"32px"} width={"auto"} alt="Logo"/>
       </Navbar.Brand>
       <Navbar.Content>
-        <Navbar.Item as={Link} onClick={() => router.push("/dashboard")}>
-          Login
-        </Navbar.Item>
         <Navbar.Item>
           <Button
             auto
             color="gradient"
             as={Link}
-            onClick={() => router.push("/#main")}
+            href="/#main"
           >
             Get started
           </Button>
