@@ -112,6 +112,7 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
         <Button
           auto
           flat
+          size="lg"
           onPress={() =>
             router.push({
               pathname: "/flow",
