@@ -71,7 +71,7 @@ export const Navigation = () => {
             auto
             color="gradient"
             as={Link}
-            onClick={() => router.push("/dashboard")}
+            onClick={() => router.push("/#main")}
           >
             Get started
           </Button>
