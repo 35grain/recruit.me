@@ -10,7 +10,7 @@ import { ConfettiButton } from "./Buttons/ConfettiButton";
 interface LayerProps {
   jobName: string;
   title: string;
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
 export const Layer = ({ jobName, title, children }: LayerProps) => {

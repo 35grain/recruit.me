@@ -14,13 +14,11 @@ export const Profile = ({ jobName, title }: ProfileProps) => {
 
   return (
     <Layer jobName={jobName} title={title}>
-      <>
         <Text h5>Upload your CV</Text>
         <input type="file" onChange={handleFileChange} />
         <Spacer y={2} />
         <Text h5>or import personal info from LinkedIn</Text>
         <LinkedInButton/>
-      </>
     </Layer>
   );
 };
