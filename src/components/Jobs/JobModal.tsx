@@ -75,7 +75,9 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
         </Grid.Container>
       </Modal.Header>
       <Modal.Body>
-        <Row>
+        <Row css={{
+            flexWrap: "wrap"
+          }}>
           <Badge>{job.region}</Badge>
           {job.salary && <Badge>{job.salary}</Badge>}
           <Badge>Replies in {job.replyTime} days</Badge>
