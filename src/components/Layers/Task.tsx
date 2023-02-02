@@ -2,19 +2,13 @@ import { TestQuestionLongText } from "../TestQuestions/TestQuestionLongText";
 import { Layer } from "../Layer";
 import { Spacer, Text, Container } from "@nextui-org/react";
 
-interface TaskProps {
-  jobName: string;
-  title: string;
-}
-
-export const Task = ({ jobName, title }: TaskProps) => {
+export const Task = () => {
 
     const handleFileChange = () => {
         console.log();
       };
 
   return (
-    <Layer jobName={jobName} title={title}>
       <Container
         css={{
           display: "flex",
@@ -63,6 +57,5 @@ export const Task = ({ jobName, title }: TaskProps) => {
         <input type="file" onChange={handleFileChange} />
         
       </Container>
-    </Layer>
   );
 };

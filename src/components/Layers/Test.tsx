@@ -5,14 +5,8 @@ import { TestQuestionShortText } from "../TestQuestions/TestQuestionShortText";
 import { Layer } from "../Layer";
 import { Spacer } from "@nextui-org/react";
 
-interface TestProps {
-  jobName: string;
-  title: string;
-}
-
-export const Test = ({ jobName, title }: TestProps) => {
+export const Test = () => {
   return (
-    <Layer jobName={jobName} title={title}>
       <div
         style={{
           display: "flex",
@@ -35,6 +29,5 @@ export const Test = ({ jobName, title }: TestProps) => {
           options={["Chicken", "Egg"]}
         />
       </div>
-    </Layer>
   );
 };
