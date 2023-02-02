@@ -118,7 +118,7 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
           onPress={() =>
             router.push({
               pathname: "/flow",
-              query: { jobName: job.title },
+              query: { jobName: job.title, company: job.company },
             })
           }
         >
