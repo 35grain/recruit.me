@@ -14,14 +14,14 @@ export const Test = () => {
           height: "50vh",
         }}
       >
-        <TestQuestionShortText label="What is your preferred programming language?" />
+        <TestQuestionShortText label="What is your preferred programming language?" initialValue="TypeScript"/>
         <Spacer y={3} />
         <TestQuestionCheckboxes
           label={"What are the various data types present in JavaScript?"}
           options={["Function", "Null", "Boolean", "None"]}
         />
         <Spacer y={3} />
-        <TestQuestionLongText label="How do you ensure code quality?" />
+        <TestQuestionLongText label="How do you ensure code quality?" initialValue="By not writing shit code"/>
         <Spacer y={3} />
         <TestQuestionRadios
           label="Which came first?"

@@ -1,18 +1,15 @@
 import { TestQuestionLongText } from "../TestQuestions/TestQuestionLongText";
 import { Spacer, Text, Container } from "@nextui-org/react";
+import { FileUploader } from "../FileUploader";
 
 export const Task = () => {
-  const handleFileChange = () => {
-    console.log();
-  };
-
   return (
     <Container
       css={{
         display: "flex",
         flexDirection: "column",
         overflowY: "visible",
-        height: "50vh",
+        minHeight: "50vh",
       }}
     >
       <Text h5>Prototype a web application for scheduling an appointment</Text>
@@ -48,10 +45,9 @@ export const Task = () => {
       </Text>
 
       <Spacer y={1} />
-      <TestQuestionLongText label="Comments" />
+      <TestQuestionLongText label="Comments" initialValue="The solution is located in this github repository: https://github.com/piuccio/cowsay"/>
       <Spacer y={1} />
-      <Text h5>Upload your solution</Text>
-      <input type="file" onChange={handleFileChange} />
+      <FileUploader />
     </Container>
   );
 };

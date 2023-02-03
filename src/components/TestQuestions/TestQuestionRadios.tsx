@@ -4,7 +4,7 @@ export const TestQuestionRadios = (props: { label: string, options: Array<string
   return (
     <>
       <Text h4>{props.label}</Text>
-      <Radio.Group orientation="horizontal">
+      <Radio.Group orientation="horizontal" defaultValue={props.options[0]}>
         {props.options.map((option, index) => {
             return <Radio value={option} key={index}>{option}</Radio>
         })}
