@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Recruit.Me - Dashboard</title>
       </Head>
-      <Spacer y={3} />
+      <Spacer y={2} />
       <Container lg as="main">
         <Text h1>
           Recruitment dashboard for{" "}
