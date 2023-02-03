@@ -45,11 +45,12 @@ export const Layer = () => {
   };
 
   return (
-    <Container>
-      <Spacer y={2} />
-      <Text h2>
-        {jobName} | {company}
-      </Text>
+    <Container css={{ marginTop: "25px" }}>
+      <Container css={{ padding: "0 22px" }}>
+        <Text h2>
+          {jobName} | {company}
+        </Text>
+      </Container>
 
       <Card css={{ padding: "10px" }}>
         <Card.Header>
