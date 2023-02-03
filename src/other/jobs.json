@@ -1,92 +1,112 @@
 [
-    {
-       "title":"Data Steward",
-       "company":"Luminor Bank AS",
-       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/05/835424-1ecf9b37737bbc6dd996aff59c024443.png",
-       "region":"Tallinn",
-       "salary":"3000 - 4200 €/m",
-       "replyTime": 4,
-       "description":"Yes, you can! That's our attitude towards our work, ambitious, ideas and relationships. We, at Luminor, believe that anyone has the potential to achieve big things and we encourage everyone to achieve them – professionally and personally. As Data Steward you will be a key-person and a point of contact for data related inquiries at Luminor. You will closely work together with other departments in the bank in order to ensure data quality improvement. It will also involve defining and maintaining data glossaries and taking a part in different data management projects. The role requires a high degree of analytical skills and technical know-how. Data Stewardship team works on pan-Baltic level and is important part of data management initiatives at Luminor. We strive to improve, standardize and align data across all three Baltic states. Traveling in the Baltics is expected."
-    },
-    {
-       "title":"Software Engineer (Quality Assurance) - Baltic Factoring",
-       "company":"Swedbank AS",
-       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/05/835358-b22a70c32ed7623ed04386b7750d9956.png",
-       "region":"Estonia",
-       "salary":"2950 - 4450 €/m",
-       "replyTime": 3,
-       "description":"Are you passionate about IT and quality? In Swedbank you have the opportunity to: Contribute with your testing knowledge and experience (manual testing initially, with a perspective of test automation in the future); Be part of an agile cross functional team and constantly improve the way of working; Be involved in analysis, design, development, testing and production support of new digital solutions for Baltic factoring business; Belong to supportive, caring, professional Baltic team; Work in an environment that supports your individual growth; Enjoy flexible work environment (hybrid workplace and flexible time); Collaborate with talented team members; Have fun!"
-    },
-    {
-       "title":"Graphic designer",
-       "company":"ROZERT OÜ",
-       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/03/833781-4adb4f071bcd227e74013dffa442c799.png",
-       "region":"Tallinn",
-       "salary":"",
-       "replyTime": 8,
-       "description":"ROZERT OÜ is a successful iGaming product-based software company, with offices in numerous countries, now looking for an experienced Graphic Designer who will be working in our Tallinn office. We make our products simple and convenient for our users. We design product functionality with complex mechanics, and constantly review our methods of operation that are familiar to the market - while striving to be the best on the market. We offer a unique chance to grow in an international team and enjoy the benefits of working in a global company. Your work will have a direct influence on the future of the company."
-    },
-    {
-       "title":"Customer Support Specialist",
-       "company":"WALLESTER AS",
-       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/01/831043-c1876c42e51a89b58529623aa3230f39.png",
-       "region":"Tallinn",
-       "salary":"",
-       "replyTime": 10,
-       "description":"We are looking for a Customer Support Specialist for our team. To excel in this role, you should be excellent in verbal and written communication. You are expected to have a thorough knowledge of the products and services offered by the company. You will be in direct contact with the customers. You also will be accountable to troubleshoot any problem and issues occurring to the customers regarding the products in a timely fashion."
-    },
-    {
-       "title":"QA Engineer",
-       "company":"WALLESTER AS",
-       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/01/831202-8c25ab25d53a7614292b4a5df58d347e.png",
-       "region":"Tallinn",
-       "salary":"",
-       "replyTime": 6,
-       "description":"We are looking for a skilled and experienced Quality Assurance Engineer to join our team. As a Quality Assurance (QA) Engineer, you will be responsible for writing and conducting tests cases ensuring the software is running perfectly. You will be meeting the needs of clients along with the team of Software Developers and Test Engineers. You will be designing and implementing the automated tests to maintain the quality of the product. Your ultimate goal will be to drive the test strategy/visibility for all the QA tasks in the project."
-    },
-    {
-      "title":"Junior Software Engineer (Java)",
-      "company":"Swedbank AS",
-      "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/04/834797-e21ca5f2a1361908c3205b310176730b.png",
-      "region":"Estonia",
-      "salary":"2500 - 3700 €/m",
-      "replyTime": 3,
-      "description":"Are you passionate about Java and Spring Boot? In Swedbank you have the opportunity to: Develop and maintain in-house and customer facing applications as well as backend services; Be part of different type of developments such as new product launch and technical upgrades; Improve your DevOps skills; Work together with awesome and supportive teammates; Be part of an agile full stack product team; Drive innovations within the team and beyond; Have access to e-trainings and conferences to support your professional growth."
-   },
-    {
-       "title":"Software developer",
-       "company":"Mercans OÜ",
-       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/01/830856-1401208f2b0821afb53d479dddc90af9.png",
-       "region":"Tartu",
-       "salary":"",
-       "replyTime": 7,
-       "description":"We are looking for a Software Engineer to manage activities ranging from automated traffic control systems to complicated industrial processes. You will play a critical role in creating software that gives practical solutions. You will be expected to handle the complete software development lifecycle, which includes analysing needs, designing, testing, and developing software to fulfil those needs."
-    },
-    {
-       "title":"Data Storytelling Expert (Data Analyst)",
-       "company":"Scandiweb",
-       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/03/833666-aae8ba4ab7facbf05c49170b3ca50ae8.png",
-       "region":"Home office",
-       "salary":"1800 - 2800 €/m",
-       "replyTime": 5,
-       "description":"You are passionate about data and eCommerce, ready to help world-leading brands, such as, Puma, The New York Times, Jaguar, and many others. If you are feeling a hunger that needs to be satisfied by participating in business correction and marketing - we might have something for you! We are looking for a passionate Data Analyst who is ready to dig into datasets and create insights, answers, and stories to drive action for Marketing, User Journey, or Business decisions."
-    },
-    {
-       "title":"Web Analytics Specialist",
-       "company":"Scandiweb",
-       "companyLogo":"https://www.cvkeskus.ee/job_logos/2023/03/833666-aae8ba4ab7facbf05c49170b3ca50ae8.png",
-       "region":"Home office",
-       "salary":"1800 - 2800 €/m",
-       "replyTime": 5,
-       "description":"Passion for Growth Marketing rises your challenge hunger to dig into data and help brands make the correct business and marketing decisions. You have experience in web analytics solutions and gaining actionable insights from data. You are just what we are looking for! We are looking for a Web Analytics Specialist that can execute web analytics implementation planning and defining requirements, as well as take existing requirements and take care of the implementation. "
-    },
-    {
-       "title":"SOFTWARE DEVELOPER WITH INTEGRATION EXPERIENCE",
-       "company":"Solita OÜ",
-       "companyLogo":"https://cv.ee/api/v1/files-service/152a961c-d57c-472d-9d87-caf35b7fcef3",
-       "region":"Tallinn",
-       "salary":"",
-       "replyTime": 2,
-       "description":"Want to join us in building a better tomorrow together? We are recruiting a Software Developer with Integration Experience to join our team in Estonia!"
-    }
- ]
+  {
+    "title": "Data Steward",
+    "role": "Data analyst",
+    "company": "Luminor Bank AS",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/05/835424-1ecf9b37737bbc6dd996aff59c024443.png",
+    "region": "Tallinn",
+    "salaryStart": 3000,
+    "salaryEnd": 4200,
+    "replyTime": 4,
+    "description": "Yes, you can! That's our attitude towards our work, ambitious, ideas and relationships. We, at Luminor, believe that anyone has the potential to achieve big things and we encourage everyone to achieve them – professionally and personally. As Data Steward you will be a key-person and a point of contact for data related inquiries at Luminor. You will closely work together with other departments in the bank in order to ensure data quality improvement. It will also involve defining and maintaining data glossaries and taking a part in different data management projects. The role requires a high degree of analytical skills and technical know-how. Data Stewardship team works on pan-Baltic level and is important part of data management initiatives at Luminor. We strive to improve, standardize and align data across all three Baltic states. Traveling in the Baltics is expected."
+  },
+  {
+    "title": "Software Engineer (Quality Assurance) - Baltic Factoring",
+    "role": "QA Engineer",
+    "company": "Swedbank AS",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/05/835358-b22a70c32ed7623ed04386b7750d9956.png",
+    "region": "Estonia",
+    "salaryStart": 2950,
+    "salaryEnd": 4450,
+    "replyTime": 3,
+    "description": "Are you passionate about IT and quality? In Swedbank you have the opportunity to: Contribute with your testing knowledge and experience (manual testing initially, with a perspective of test automation in the future); Be part of an agile cross functional team and constantly improve the way of working; Be involved in analysis, design, development, testing and production support of new digital solutions for Baltic factoring business; Belong to supportive, caring, professional Baltic team; Work in an environment that supports your individual growth; Enjoy flexible work environment (hybrid workplace and flexible time); Collaborate with talented team members; Have fun!"
+  },
+  {
+    "title": "Graphic designer",
+    "role": "Graphic designer",
+    "company": "ROZERT OÜ",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/03/833781-4adb4f071bcd227e74013dffa442c799.png",
+    "region": "Tallinn",
+    "salaryStart": 0,
+    "salaryEnd": 0,
+    "replyTime": 8,
+    "description": "ROZERT OÜ is a successful iGaming product-based software company, with offices in numerous countries, now looking for an experienced Graphic Designer who will be working in our Tallinn office. We make our products simple and convenient for our users. We design product functionality with complex mechanics, and constantly review our methods of operation that are familiar to the market - while striving to be the best on the market. We offer a unique chance to grow in an international team and enjoy the benefits of working in a global company. Your work will have a direct influence on the future of the company."
+  },
+  {
+    "title": "Customer Support Specialist",
+    "role": "Customer support specialist",
+    "company": "WALLESTER AS",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/01/831043-c1876c42e51a89b58529623aa3230f39.png",
+    "region": "Tallinn",
+    "salaryStart": 1700,
+    "salaryEnd": 2500,
+    "replyTime": 10,
+    "description": "We are looking for a Customer Support Specialist for our team. To excel in this role, you should be excellent in verbal and written communication. You are expected to have a thorough knowledge of the products and services offered by the company. You will be in direct contact with the customers. You also will be accountable to troubleshoot any problem and issues occurring to the customers regarding the products in a timely fashion."
+  },
+  {
+    "title": "QA Engineer",
+    "role": "QA Engineer",
+    "company": "WALLESTER AS",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/01/831202-8c25ab25d53a7614292b4a5df58d347e.png",
+    "region": "Tallinn",
+    "salaryStart": 1700,
+    "salaryEnd": 2500,
+    "replyTime": 6,
+    "description": "We are looking for a skilled and experienced Quality Assurance Engineer to join our team. As a Quality Assurance (QA) Engineer, you will be responsible for writing and conducting tests cases ensuring the software is running perfectly. You will be meeting the needs of clients along with the team of Software Developers and Test Engineers. You will be designing and implementing the automated tests to maintain the quality of the product. Your ultimate goal will be to drive the test strategy/visibility for all the QA tasks in the project."
+  },
+  {
+    "title": "Junior Software Engineer (Java)",
+    "role": "Software developer",
+    "company": "Swedbank AS",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/04/834797-e21ca5f2a1361908c3205b310176730b.png",
+    "region": "Estonia",
+    "salaryStart": 2500,
+    "salaryEnd": 3700,
+    "replyTime": 3,
+    "description": "Are you passionate about Java and Spring Boot? In Swedbank you have the opportunity to: Develop and maintain in-house and customer facing applications as well as backend services; Be part of different type of developments such as new product launch and technical upgrades; Improve your DevOps skills; Work together with awesome and supportive teammates; Be part of an agile full stack product team; Drive innovations within the team and beyond; Have access to e-trainings and conferences to support your professional growth."
+  },
+  {
+    "title": "Software developer",
+    "role": "Software developer",
+    "company": "Mercans OÜ",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/01/830856-1401208f2b0821afb53d479dddc90af9.png",
+    "region": "Tartu",
+    "salaryStart": 1700,
+    "salaryEnd": 2500,
+    "replyTime": 7,
+    "description": "We are looking for a Software Engineer to manage activities ranging from automated traffic control systems to complicated industrial processes. You will play a critical role in creating software that gives practical solutions. You will be expected to handle the complete software development lifecycle, which includes analysing needs, designing, testing, and developing software to fulfil those needs."
+  },
+  {
+    "title": "Data Storytelling Expert (Data Analyst)",
+    "role": "Data analyst",
+    "company": "Scandiweb",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/03/833666-aae8ba4ab7facbf05c49170b3ca50ae8.png",
+    "region": "Home office",
+    "salaryStart": 1800,
+    "salaryEnd": 2800,
+    "replyTime": 5,
+    "description": "You are passionate about data and eCommerce, ready to help world-leading brands, such as, Puma, The New York Times, Jaguar, and many others. If you are feeling a hunger that needs to be satisfied by participating in business correction and marketing - we might have something for you! We are looking for a passionate Data Analyst who is ready to dig into datasets and create insights, answers, and stories to drive action for Marketing, User Journey, or Business decisions."
+  },
+  {
+    "title": "Web Analytics Specialist",
+    "role": "Data analyst",
+    "company": "Scandiweb",
+    "companyLogo": "https://www.cvkeskus.ee/job_logos/2023/03/833666-aae8ba4ab7facbf05c49170b3ca50ae8.png",
+    "region": "Home office",
+    "salaryStart": 1800,
+    "salaryEnd": 2800,
+    "replyTime": 5,
+    "description": "Passion for Growth Marketing rises your challenge hunger to dig into data and help brands make the correct business and marketing decisions. You have experience in web analytics solutions and gaining actionable insights from data. You are just what we are looking for! We are looking for a Web Analytics Specialist that can execute web analytics implementation planning and defining requirements, as well as take existing requirements and take care of the implementation. "
+  },
+  {
+    "title": "SOFTWARE DEVELOPER WITH INTEGRATION EXPERIENCE",
+    "role": "Software developer",
+    "company": "Solita OÜ",
+    "companyLogo": "https://cv.ee/api/v1/files-service/152a961c-d57c-472d-9d87-caf35b7fcef3",
+    "region": "Tallinn",
+    "salaryStart": 1700,
+    "salaryEnd": 2500,
+    "replyTime": 2,
+    "description": "Want to join us in building a better tomorrow together? We are recruiting a Software Developer with Integration Experience to join our team in Estonia!"
+  }
+]

@@ -3,7 +3,9 @@ export interface Job {
     company: string,
     companyLogo: string,
     region: string,
-    salary: string,
+    salaryStart: number,
+    salaryEnd: number,
     replyTime: number,
-    description: string
+    description: string,
+    role: string
 }

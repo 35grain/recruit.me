@@ -5,14 +5,15 @@ import {
   Image,
   Avatar,
   Dropdown,
-  Text,
 } from "@nextui-org/react";
 import { useRouter } from "next/router";
 import confetti from "canvas-confetti";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const Navigation = () => {
   const router = useRouter();
+
+  // Confetti
   const handleConfetti = () => {
     confetti({
       angle: -40,
@@ -51,6 +52,13 @@ export const Navigation = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  const [selected, setSelected] = useState(Object);
+
+  if (selected == 'logout') {
+    router.push('/');
+    setSelected('');
+  }
 
   return (
     <Navbar
@@ -114,7 +122,7 @@ export const Navigation = () => {
               <Dropdown.Menu
                 color="primary"
                 disabledKeys={["help_and_feedback", "vacancies"]}
-                aria-label="Actions" onAction={() => router.push('/')}
+                aria-label="Actions" onAction={setSelected}
               >
                 <Dropdown.Item key="dashboard">Dashboard</Dropdown.Item>
                 <Dropdown.Item key="vacancies">Vacancies</Dropdown.Item>

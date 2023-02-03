@@ -8,8 +8,6 @@ export const Task = () => {
       css={{
         display: "flex",
         flexDirection: "column",
-        overflowY: "visible",
-        minHeight: "50vh",
       }}
     >
       <Text h5>Prototype a web application for scheduling an appointment</Text>
