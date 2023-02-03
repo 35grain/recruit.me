@@ -15,15 +15,15 @@ export const JobList = () => {
   let regions = Array.from(new Set(jobs.map((job) => job.region)));
   let roles = Array.from(new Set(jobs.map((job) => job.role)));
 
-  useEffect(() => {
-    jobs.sort((a, b) => {
-      if (a.replyTime > b.replyTime) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-  }, []);
+  jobs.sort((a, b) => {
+    if (a.replyTime > b.replyTime) {
+      return 1;
+    } else if (a.replyTime < b.replyTime) {
+      return -1;
+    }
+    return 0;
+  });
+
   companies.sort();
   regions.sort();
   roles.sort();
