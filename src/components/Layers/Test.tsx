@@ -10,8 +10,6 @@ export const Test = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          overflowY: "visible",
-          height: "50vh",
         }}
       >
         <TestQuestionShortText label="What is your preferred programming language?" initialValue="TypeScript"/>
