@@ -15,6 +15,7 @@ import { ConfettiButton } from "./Buttons/ConfettiButton";
 import { Profile } from "./Layers/Profile";
 import { Task } from "./Layers/Task";
 import { Test } from "./Layers/Test";
+import { Result } from "./Layers/Result";
 import { useRouter } from "next/router";
 
 export const Layer = () => {
@@ -60,38 +61,7 @@ export const Layer = () => {
           {page === 1 && <Profile />}
           {page === 2 && <Test />}
           {page === 3 && <Task />}
-          {page === 4 && (
-            <>
-              <Text h4>
-                Good job! Your application has been approved 🥳. Now you can sit
-                back and wait for a reply from {company}.
-              </Text>
-              <Spacer y={2} />
-              <Text h4>Your results:</Text>
-              <Grid.Container gap={2} justify="center" css={{ width: "50%" }}>
-                <Grid xs={6}>
-                  <Text b>Profile</Text>
-                </Grid>
-                <Grid xs={6}>
-                  <Text b color="success">
-                    Approved
-                  </Text>
-                </Grid>
-                <Grid xs={6}>
-                  <Text b>Theoretical test #1</Text>
-                </Grid>
-                <Grid xs={6} css={{ alignItems: "center" }}>
-                  <Progress value={90} color="success" />
-                </Grid>
-                <Grid xs={6}>
-                  <Text b>Practical project #1</Text>
-                </Grid>
-                <Grid xs={6} css={{ alignItems: "center" }}>
-                  <Progress value={80} color="success" />
-                </Grid>
-              </Grid.Container>
-            </>
-          )}
+          {page === 4 && <Result company={company as string} />}
         </Card.Body>
 
         <Card.Footer css={{ display: "flex", justifyContent: "flex-end" }}>
