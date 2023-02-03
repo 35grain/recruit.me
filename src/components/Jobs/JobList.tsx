@@ -45,7 +45,7 @@ export const JobList = () => {
       >
         <Input
           type="number"
-          label="Salary from"
+          labelPlaceholder="Salary from"
           onChange={(e) => {
             setSelectedSalary(e.currentTarget.value);
           }}
