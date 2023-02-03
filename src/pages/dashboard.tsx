@@ -84,7 +84,7 @@ export default function Home() {
                 <Text>3 applicants</Text>
               </Grid>
               <Grid xs={12} md={6} direction="column">
-                <Text h3>4 applications</Text>
+                <Text h3>5 applications</Text>
                 <DashboardApplicant
                   name="Tõnis not Hendrik"
                   vacancy="Software Engineer (Quality Assurance) - Baltic Factoring"
