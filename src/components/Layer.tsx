@@ -26,28 +26,32 @@ export const Layer = () => {
 
   const pagesTotal = 4;
 
-  const titles = ["Create Profile", "Test #1", "Task #1", "Done"];
+  const titles = [
+    "Create Profile",
+    "Theoretical test #1",
+    "Practical project #1",
+    "Done",
+  ];
 
   const handleNextPage = () => {
-    if (page < pagesTotal-1) setPage(page + 1)
-    else if (page === pagesTotal-1) {
+    if (page < pagesTotal - 1) setPage(page + 1);
+    else if (page === pagesTotal - 1) {
       setLoadingResults(true);
       setTimeout(() => {
         setLoadingResults(false);
-        setPage(page+1);
+        setPage(page + 1);
       }, 1500);
     }
   };
 
   return (
-    <Container css={{ margin: "50px 0" }}>
-      <Container css={{ padding: "0 22px" }}>
-        <Text h2>
-          {jobName} | {company}
-        </Text>
-      </Container>
+    <Container>
+      <Spacer y={2} />
+      <Text h2>
+        {jobName} | {company}
+      </Text>
 
-      <Card css={{ padding: "10px", minHeight: "400px" }}>
+      <Card css={{ padding: "10px" }}>
         <Card.Header>
           <Text h3>{titles[page - 1]}</Text>
         </Card.Header>
@@ -58,7 +62,10 @@ export const Layer = () => {
           {page === 3 && <Task />}
           {page === 4 && (
             <>
-              <Text h4>Good job! Your application has been approved 🥳. Now you can sit back and wait for a reply from {company}.</Text>
+              <Text h4>
+                Good job! Your application has been approved 🥳. Now you can sit
+                back and wait for a reply from {company}.
+              </Text>
               <Spacer y={2} />
               <Text h4>Your results:</Text>
               <Grid.Container gap={2} justify="center" css={{ width: "50%" }}>
@@ -71,13 +78,13 @@ export const Layer = () => {
                   </Text>
                 </Grid>
                 <Grid xs={6}>
-                  <Text b>Test #1</Text>
+                  <Text b>Theoretical test #1</Text>
                 </Grid>
                 <Grid xs={6} css={{ alignItems: "center" }}>
                   <Progress value={90} color="success" />
                 </Grid>
                 <Grid xs={6}>
-                  <Text b>Task #1</Text>
+                  <Text b>Practical project #1</Text>
                 </Grid>
                 <Grid xs={6} css={{ alignItems: "center" }}>
                   <Progress value={80} color="success" />
@@ -91,29 +98,29 @@ export const Layer = () => {
           {page !== pagesTotal ? (
             <ConfettiButton callback={handleNextPage} />
           ) : (
-            <div style={{display: "flex", gap: 20}}>
-            <Button
-              size="lg"
-              rounded
-              as={Link}
-              href="/"
-              css={{
-                minWidth: "auto",
-              }}
-            >
-              My applications
-            </Button>
-            <Button
-              size="lg"
-              rounded
-              as={Link}
-              onClick={() => router.push('/')}
-              css={{
-                minWidth: "auto",
-              }}
-            >
-              Back to job offers
-            </Button>
+            <div style={{ display: "flex", gap: 20 }}>
+              <Button
+                size="lg"
+                rounded
+                as={Link}
+                href="/"
+                css={{
+                  minWidth: "auto",
+                }}
+              >
+                My applications
+              </Button>
+              <Button
+                size="lg"
+                rounded
+                as={Link}
+                onClick={() => router.push("/")}
+                css={{
+                  minWidth: "auto",
+                }}
+              >
+                Back to job offers
+              </Button>
             </div>
           )}
         </Card.Footer>
@@ -153,6 +160,7 @@ export const Layer = () => {
           controls={false}
         />
       </Container>
+      <Spacer y={2} />
     </Container>
   );
 };

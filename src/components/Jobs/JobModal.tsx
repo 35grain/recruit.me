@@ -75,11 +75,17 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
         </Grid.Container>
       </Modal.Header>
       <Modal.Body>
-        <Row css={{
-            flexWrap: "wrap"
-          }}>
+        <Row
+          css={{
+            flexWrap: "wrap",
+          }}
+        >
           <Badge>{job.region}</Badge>
-          {job.salaryStart != 0 && <Badge>{job.salaryStart} - {job.salaryEnd} €/month</Badge>}
+          {job.salaryStart != 0 && (
+            <Badge>
+              {job.salaryStart} - {job.salaryEnd} €/month
+            </Badge>
+          )}
           <Badge>Replies in {job.replyTime} days</Badge>
         </Row>
         <Row justify="space-between">
@@ -117,12 +123,13 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
           auto
           flat
           size="lg"
-          onPress={() =>
+          onClick={() => {
+            setVisible(false);
             router.push({
               pathname: "/flow",
               query: { jobName: job.title, company: job.company },
-            })
-          }
+            });
+          }}
         >
           Apply
         </Button>

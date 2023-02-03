@@ -8,8 +8,6 @@ export const Task = () => {
       css={{
         display: "flex",
         flexDirection: "column",
-        overflowY: "visible",
-        minHeight: "50vh",
       }}
     >
       <Text h5>Prototype a web application for scheduling an appointment</Text>
@@ -17,16 +15,18 @@ export const Task = () => {
         Given a CSV dataset that contains the active coaches and their weekly
         schedule of their available hours, Output the following User Stories:
       </Text>
-      <ul>
-        <Text>As a User, I want to see which coaches I can schedule with.</Text>
-        <Text>
+      <ul style={{
+        listStyle: "initial"
+      }}>
+        <li>As a User, I want to see which coaches I can schedule with.</li>
+        <li>
           As a User, I want to see what 30 minute timeslots are available to
           schedule with a particular coach.
-        </Text>
-        <Text>
+        </li>
+        <li>
           As a User, I want to book an appointment with a coach at one of their
           available times.
-        </Text>
+        </li>
       </ul>
 
       <Text>
