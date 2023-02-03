@@ -7,5 +7,6 @@ export interface Job {
     salaryEnd: number,
     replyTime: number,
     description: string,
-    role: string
+    role: string,
+    deadline: string
 }

@@ -8,6 +8,7 @@
     "salaryStart": 3000,
     "salaryEnd": 4200,
     "replyTime": 4,
+    "deadline": "21.03.2023",
     "description": "Yes, you can! That's our attitude towards our work, ambitious, ideas and relationships. We, at Luminor, believe that anyone has the potential to achieve big things and we encourage everyone to achieve them – professionally and personally. As Data Steward you will be a key-person and a point of contact for data related inquiries at Luminor. You will closely work together with other departments in the bank in order to ensure data quality improvement. It will also involve defining and maintaining data glossaries and taking a part in different data management projects. The role requires a high degree of analytical skills and technical know-how. Data Stewardship team works on pan-Baltic level and is important part of data management initiatives at Luminor. We strive to improve, standardize and align data across all three Baltic states. Traveling in the Baltics is expected."
   },
   {
@@ -19,6 +20,7 @@
     "salaryStart": 2950,
     "salaryEnd": 4450,
     "replyTime": 3,
+    "deadline": "11.03.2023",
     "description": "Are you passionate about IT and quality? In Swedbank you have the opportunity to: Contribute with your testing knowledge and experience (manual testing initially, with a perspective of test automation in the future); Be part of an agile cross functional team and constantly improve the way of working; Be involved in analysis, design, development, testing and production support of new digital solutions for Baltic factoring business; Belong to supportive, caring, professional Baltic team; Work in an environment that supports your individual growth; Enjoy flexible work environment (hybrid workplace and flexible time); Collaborate with talented team members; Have fun!"
   },
   {
@@ -30,6 +32,7 @@
     "salaryStart": 0,
     "salaryEnd": 0,
     "replyTime": 8,
+    "deadline": "18.03.2023",
     "description": "ROZERT OÜ is a successful iGaming product-based software company, with offices in numerous countries, now looking for an experienced Graphic Designer who will be working in our Tallinn office. We make our products simple and convenient for our users. We design product functionality with complex mechanics, and constantly review our methods of operation that are familiar to the market - while striving to be the best on the market. We offer a unique chance to grow in an international team and enjoy the benefits of working in a global company. Your work will have a direct influence on the future of the company."
   },
   {
@@ -41,6 +44,7 @@
     "salaryStart": 1700,
     "salaryEnd": 2500,
     "replyTime": 10,
+    "deadline": "21.04.2023",
     "description": "We are looking for a Customer Support Specialist for our team. To excel in this role, you should be excellent in verbal and written communication. You are expected to have a thorough knowledge of the products and services offered by the company. You will be in direct contact with the customers. You also will be accountable to troubleshoot any problem and issues occurring to the customers regarding the products in a timely fashion."
   },
   {
@@ -52,6 +56,7 @@
     "salaryStart": 1700,
     "salaryEnd": 2500,
     "replyTime": 6,
+    "deadline": "27.03.2023",
     "description": "We are looking for a skilled and experienced Quality Assurance Engineer to join our team. As a Quality Assurance (QA) Engineer, you will be responsible for writing and conducting tests cases ensuring the software is running perfectly. You will be meeting the needs of clients along with the team of Software Developers and Test Engineers. You will be designing and implementing the automated tests to maintain the quality of the product. Your ultimate goal will be to drive the test strategy/visibility for all the QA tasks in the project."
   },
   {
@@ -63,6 +68,7 @@
     "salaryStart": 2500,
     "salaryEnd": 3700,
     "replyTime": 3,
+    "deadline": "1.05.2023",
     "description": "Are you passionate about Java and Spring Boot? In Swedbank you have the opportunity to: Develop and maintain in-house and customer facing applications as well as backend services; Be part of different type of developments such as new product launch and technical upgrades; Improve your DevOps skills; Work together with awesome and supportive teammates; Be part of an agile full stack product team; Drive innovations within the team and beyond; Have access to e-trainings and conferences to support your professional growth."
   },
   {
@@ -74,6 +80,7 @@
     "salaryStart": 1700,
     "salaryEnd": 2500,
     "replyTime": 7,
+    "deadline": "4.03.2023",
     "description": "We are looking for a Software Engineer to manage activities ranging from automated traffic control systems to complicated industrial processes. You will play a critical role in creating software that gives practical solutions. You will be expected to handle the complete software development lifecycle, which includes analysing needs, designing, testing, and developing software to fulfil those needs."
   },
   {
@@ -85,6 +92,7 @@
     "salaryStart": 1800,
     "salaryEnd": 2800,
     "replyTime": 5,
+    "deadline": "6.03.2023",
     "description": "You are passionate about data and eCommerce, ready to help world-leading brands, such as, Puma, The New York Times, Jaguar, and many others. If you are feeling a hunger that needs to be satisfied by participating in business correction and marketing - we might have something for you! We are looking for a passionate Data Analyst who is ready to dig into datasets and create insights, answers, and stories to drive action for Marketing, User Journey, or Business decisions."
   },
   {
@@ -96,6 +104,7 @@
     "salaryStart": 1800,
     "salaryEnd": 2800,
     "replyTime": 5,
+    "deadline": "19.03.2023",
     "description": "Passion for Growth Marketing rises your challenge hunger to dig into data and help brands make the correct business and marketing decisions. You have experience in web analytics solutions and gaining actionable insights from data. You are just what we are looking for! We are looking for a Web Analytics Specialist that can execute web analytics implementation planning and defining requirements, as well as take existing requirements and take care of the implementation. "
   },
   {
@@ -107,6 +116,7 @@
     "salaryStart": 1700,
     "salaryEnd": 2500,
     "replyTime": 2,
+    "deadline": "24.03.2023",
     "description": "Want to join us in building a better tomorrow together? We are recruiting a Software Developer with Integration Experience to join our team in Estonia!"
   }
 ]
