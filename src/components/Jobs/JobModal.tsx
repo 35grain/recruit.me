@@ -87,6 +87,7 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
             </Badge>
           )}
           <Badge>Replies in {job.replyTime} days</Badge>
+          <Badge>Deadline {job.deadline}</Badge>
         </Row>
         <Row justify="space-between">
           <Text size={16}>{job.description}</Text>

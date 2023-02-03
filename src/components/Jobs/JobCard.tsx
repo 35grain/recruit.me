@@ -51,6 +51,7 @@ export const JobCard = ({ job }: JobCardProps) => {
             <Badge>{job.region}</Badge>
             {job.salaryStart != 0 && <Badge>{job.salaryStart} - {job.salaryEnd} €/month</Badge>}
             <Badge>Replies in {job.replyTime} days</Badge>
+            <Badge>Deadline {job.deadline}</Badge>
           </Row>
         </Card.Footer>
       </Card>
