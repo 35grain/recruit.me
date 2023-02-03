@@ -14,7 +14,7 @@ export const Profile = () => {
         <Text h5>Upload your CV</Text>
         <FileUploader/>
         <Spacer y={2} />
-        <Text h5>Or import your personal info from:</Text>
+        <Text h5>Or import your professional profile from:</Text>
         <Container css={{padding: 0, display: "flex", gap: 20}}>
         <LinkedInButton/>
         <EuropassButton/>

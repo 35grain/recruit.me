@@ -34,7 +34,14 @@ export const JobList = () => {
 
   return (
     <Container>
-      <Text h2>Sounds like your future?</Text>
+      <Text
+        h2
+        css={{
+          padding: "50px 0",
+        }}
+      >
+        Sounds like your future?
+      </Text>
       <div
         style={{
           display: "flex",

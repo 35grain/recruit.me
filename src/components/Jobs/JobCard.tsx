@@ -22,7 +22,7 @@ export const JobCard = ({ job }: JobCardProps) => {
         css={{ p: "$6",}}
         onPress={handlePress}
       >
-        <Card.Header>
+        <Card.Header css={{ alignItems: "flex-start" }}>
           <img
             alt="Company logo"
             src={job.companyLogo}
@@ -30,7 +30,7 @@ export const JobCard = ({ job }: JobCardProps) => {
             height="64px"
             style={{ objectFit: "contain" }}
           />
-          <Grid.Container css={{ pl: "$6" }}>
+          <Grid.Container css={{ pl: "$6", paddingLeft: "20px" }}>
             <Grid xs={12}>
               <Text h4 css={{ lineHeight: "$xs" }}>
                 {job.title}
@@ -46,7 +46,8 @@ export const JobCard = ({ job }: JobCardProps) => {
         </Card.Body>
         <Card.Footer>
           <Row css={{
-            flexWrap: "wrap"
+            flexWrap: "wrap",
+            gap: "5px"
           }}>
             <Badge>{job.region}</Badge>
             {job.salaryStart != 0 && <Badge>{job.salaryStart} - {job.salaryEnd} €/month</Badge>}
