@@ -9,7 +9,6 @@ export const Profile = () => {
       css={{
         display: "flex",
         flexDirection: "column",
-        overflowY: "visible",
       }}
     >
         <Text h5>Upload your CV</Text>
