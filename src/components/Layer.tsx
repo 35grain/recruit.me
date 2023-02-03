@@ -59,7 +59,7 @@ export const Layer = () => {
               size="lg"
               rounded
               as={Link}
-              href="/#main"
+              onClick={() => router.push('/')}
               css={{
                 minWidth: "auto",
               }}

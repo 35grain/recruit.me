@@ -62,9 +62,9 @@ export const DashboardApplicant = (props: {
         {profileApproved ? "Approved" : "Rejected"}
       </Text>
       <Text small>Test #1 rating</Text>
-      <Progress color={props.color} value={props.rating} />
+      <Progress color="secondary" value={props.rating} />
       <Text small>Task #2 rating</Text>
-      <Progress color={props.color} value={props.rating + 10} />
+      <Progress color="secondary" value={props.rating + 10} />
       <Spacer y={1} />
       <Button
         color="primary"

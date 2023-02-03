@@ -79,7 +79,7 @@ export const JobModal = ({ visible, setVisible, job }: JobModalProps) => {
             flexWrap: "wrap"
           }}>
           <Badge>{job.region}</Badge>
-          {job.salary && <Badge>{job.salary}</Badge>}
+          {job.salaryStart != 0 && <Badge>{job.salaryStart} - {job.salaryEnd} €/month</Badge>}
           <Badge>Replies in {job.replyTime} days</Badge>
         </Row>
         <Row justify="space-between">
