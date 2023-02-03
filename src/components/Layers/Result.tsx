@@ -8,8 +8,7 @@ export const Result = ({ company }: ResultProps) => {
   return (
     <>
       <Text h4>
-        That's it! Your application has been submitted 🥳. Now sit back
-        and wait for a reply from {company}.
+        {"That's it! Your application has been submitted 🥳."} Now sit back and wait for a reply from {company}.
       </Text>
       <Spacer y={2} />
       <Text h4>Your results:</Text>
